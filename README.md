@@ -65,7 +65,8 @@ git clone https://gitee.com/tolinkai/acs.git
 # 进入项目目录
 cd acs
 
-# 根据文档修改配置文件
+# 复制.env_bak示例配置文件重命名为.env并根据文档修改配置文件
+cp .env_bak .env
 vim .env
 
 # 安装依赖
@@ -94,6 +95,9 @@ git clone https://github.com/linkaias/acs.git
 git clone https://gitee.com/tolinkai/acs.git
 
 cd acs
+
+# 复制.env_bak示例配置文件重命名为.env并根据文档修改配置文件
+cp .env_bak .env
 
 # 构建镜像
 docker build -t acs:1.1 .
