@@ -6,7 +6,7 @@
 
 ACS是一款使用go和vue3开发的用于记录API访问记录、网页浏览记录等的开源项目。它提供了一个简单易用的后台管理页面，可以查看调用折线图、饼图等，帮助您更好地了解API的使用情况以及发现一些异常。
 
-- [GitHub](https://github.com/linkaias/acs): https://github.com/linkaias/acs
+- [GitHub](https://github.com/linkaias/acs): https://github.com/linkaias/acs.git
 
 - [Gitee](https://gitee.com/tolinkai/acs): https://gitee.com/tolinkai/acs.git
 
@@ -60,7 +60,7 @@ ACS是一款使用go和vue3开发的用于记录API访问记录、网页浏览�
 # 克隆项目
 git clone https://github.com/linkaias/acs.git
 # 或者
-git clone https://gitee.com/tolinkai/acs
+git clone https://gitee.com/tolinkai/acs.git
 
 # 进入项目目录
 cd acs
@@ -91,7 +91,7 @@ http://localhost:9528
 # 克隆项目
 git clone https://github.com/linkaias/acs.git
 # 或者
-git clone https://gitee.com/tolinkai/acs
+git clone https://gitee.com/tolinkai/acs.git
 
 cd acs
 
@@ -125,6 +125,6 @@ http://acsdemo.uiucode.com
 
 ## License
 
-[MIT](https://github.com/linkaias/acs/blob/main/LICENSE)
+[MIT](https://github.com/linkaias/acs/blob/master/LICENSE)
 
 Copyright (c) 2024-present LinKai
