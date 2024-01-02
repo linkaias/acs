@@ -1,0 +1,1 @@
+import{r as o}from"./request-675639ab.js";const t=e=>o({url:"/login",data:e,method:"post"}),s=Object.freeze(Object.defineProperty({__proto__:null,reqGetToken:t},Symbol.toStringTag,{value:"Module"}));export{t as r,s as u};

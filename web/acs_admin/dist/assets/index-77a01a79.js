@@ -1,0 +1,1 @@
+import{r as t}from"./request-675639ab.js";const o=()=>t({url:"/system/info",method:"get"}),r=()=>t({url:"/system/get_config",method:"get"}),a=e=>t({url:"/system/save_config",method:"post",data:e}),n=e=>t({url:"/system/ping_db",method:"post",data:e});export{r as a,a as b,n as c,o as r};

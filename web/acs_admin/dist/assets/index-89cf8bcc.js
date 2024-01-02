@@ -1,0 +1,1 @@
+import{r as o}from"./request-675639ab.js";const u=()=>o({url:"/group/record_group",method:"get"}),p=r=>o({url:"/group/record_group",method:"post",data:r}),t=r=>o({url:"/group/record_group",method:"put",data:r}),d=r=>o({url:`/group/record_group?id=${r}`,method:"delete"});export{t as a,p as b,d as c,u as r};

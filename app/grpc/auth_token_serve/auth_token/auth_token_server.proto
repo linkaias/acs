@@ -1,0 +1,25 @@
+syntax = "proto3";
+
+option go_package = "./";
+
+package auth_token_server;
+
+service AuthTokenServer {
+  rpc GetToken(GetTokenRequest) returns (GetTokenResponse);
+}
+
+message GetTokenRequest {
+  string user = 1;
+  string password = 2;
+}
+
+message TokenInfoModel {
+  int32 exp = 1;
+  string token = 2;
+}
+
+message GetTokenResponse {
+  int32 code = 1;
+  string msg = 2;
+  TokenInfoModel data = 3;
+}

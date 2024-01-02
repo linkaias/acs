@@ -1,0 +1,59 @@
+syntax = "proto3";
+
+
+option go_package = "./";
+
+package record_group_server;
+
+service RecordGroupServer {
+  rpc RecordGroupList(RecordGroupListRequest) returns (RecordGroupListResponse);
+  rpc RecordGroupUpdate(RecordGroupUpRequest) returns (RecordGroupResponse);
+  rpc RecordGroupAdd(RecordGroupAddRequest) returns (RecordGroupResponse);
+  rpc RecordGroupDel(RecordGroupDelRequest) returns (RecordGroupResponse);
+}
+
+
+// 新增分组请求
+message RecordGroupListRequest {
+  string page = 1;
+  string limit = 2;
+}
+
+
+// 新增分组请求
+message RecordGroupAddRequest {
+  string name = 1;
+  string desc = 2;
+}
+
+// 更新分组
+message RecordGroupUpRequest {
+  int32 id = 1;
+  string name = 2;
+  string desc = 3;
+}
+
+// 更新分组
+message RecordGroupDelRequest {
+  int32 id = 1;
+}
+
+message RecordGroupResponse {
+  int32 code = 1;
+  string msg = 2;
+}
+
+message RecordGroupListResponse {
+  int32 code = 1;
+  string msg = 2;
+  repeated RecordGroupModel data = 3;
+}
+
+message RecordGroupModel {
+  int32 id = 1;
+  string name = 2;
+  string desc = 3;
+  string created_at = 4;
+  string update_at = 5;
+}
+

@@ -1,0 +1,1 @@
+import{_ as o,b as n,e as t,f as s}from"./index-07fbba9f.js";const c={name:"index"};function r(p,a,_,i,m,d){const e=n("el-empty");return t(),s(e,{description:"功能开发中..."})}const l=o(c,[["render",r]]);export{l as default};

@@ -1,0 +1,23 @@
+syntax = "proto3";
+
+option go_package = "./";
+
+package record_server;
+
+// 请求记录服务
+service RecordServer {
+  rpc Record(RecordRequest) returns (RecordResponse);
+}
+
+message RecordRequest {
+  int32 group_id = 1;
+  string name = 2;
+  string url = 3;
+  string method = 4;
+  string ip = 5;
+}
+
+message RecordResponse {
+  int32 code = 1;
+  string msg = 2;
+}
